@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — DappTestAudit</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0A0A0E; color: #ccc; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+        h1 { color: #fff; font-size: 32px; margin-bottom: 8px; }
+        h1 span { color: #9945FF; }
+        h2 { color: #14F195; font-size: 18px; margin-top: 32px; margin-bottom: 12px; }
+        p, li { color: #999; font-size: 14px; margin: 8px 0; }
+        ul { margin-left: 20px; }
+        a { color: #9945FF; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .warning { color: #FFE156; font-weight: bold; }
+        .date { color: #666; font-size: 12px; margin-bottom: 24px; }
+        .nav { border-bottom: 1px solid #222; padding-bottom: 16px; margin-bottom: 32px; }
+        .nav a { margin-right: 20px; font-size: 14px; }
+        .footer { border-top: 1px solid #222; padding-top: 24px; margin-top: 48px; color: #555; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="disclaimer.html">Disclaimer</a>
+            <a href="sanctions.html">Sanctions</a>
+            <a href="copyright.html">Copyright</a>
+            <a href="license.html">License</a>
+        </div>
+
+        <h1>Privacy <span>Policy</span></h1>
+        <p class="date">Effective: February 2026</p>
+
+        <p>DappTestAudit ("the App") is developed by ADappvark ("we", "us", "our"). We are committed to protecting your privacy. This policy explains what data the App handles and how.</p>
+
+        <p><strong style="color: #14F195;">Summary: DappTestAudit collects no personal data beyond what is needed for optional GitHub sign-in. All scanning is performed on your device.</strong></p>
+
+        <h2>1. Data We Do NOT Collect</h2>
+        <p>We do not collect, store, transmit, or process any of the following:</p>
+        <ul>
+            <li>Personal information (name, email, phone number, date of birth)</li>
+            <li>Account or login credentials (your GitHub password is never seen by us)</li>
+            <li>Device identifiers or advertising IDs</li>
+            <li>Usage analytics or telemetry</li>
+            <li>Crash reports sent externally</li>
+            <li>Cookies or tracking technologies</li>
+            <li>Repository source code (fetched temporarily for scanning, never stored)</li>
+        </ul>
+
+        <h2>2. Local Storage</h2>
+        <p>The App stores the following data locally on your device only:</p>
+        <ul>
+            <li><strong style="color: #ccc;">Wallet connection state</strong> — encrypted via Android Keystore (EncryptedSharedPreferences)</li>
+            <li><strong style="color: #ccc;">GitHub OAuth access token</strong> — encrypted via Android Keystore (EncryptedSharedPreferences)</li>
+            <li><strong style="color: #ccc;">GitHub username</strong> — stored locally for display purposes</li>
+            <li><strong style="color: #ccc;">Disclaimer acceptance</strong> — simple boolean flag</li>
+        </ul>
+        <p>This data never leaves your device and is deleted when you uninstall the App or sign out.</p>
+
+        <h2>3. Network Requests</h2>
+        <p>DappTestAudit makes network requests only for the following purposes:</p>
+        <ul>
+            <li><strong style="color: #ccc;">GitHub API</strong> — to authenticate via GitHub Device Flow OAuth and to fetch repository file contents for scanning. Only occurs when you choose to sign in with GitHub.</li>
+            <li><strong style="color: #ccc;">Solana RPC</strong> — to verify Seeker Genesis Token (SGT) holder status when you connect a wallet. A single read-only request to the Solana mainnet.</li>
+            <li><strong style="color: #ccc;">Mobile Wallet Adapter (MWA)</strong> — local device-to-device communication for wallet sign-in via SIWS (Sign In With Solana).</li>
+        </ul>
+        <p>GitHub requests include your OAuth access token for authentication. Repository contents are fetched temporarily into memory for scanning and are never stored, cached, or transmitted elsewhere. No personal data is included in Solana RPC requests.</p>
+
+        <h2>4. GitHub OAuth</h2>
+        <p>DappTestAudit uses GitHub's Device Flow OAuth, which means:</p>
+        <ul>
+            <li>Your GitHub password is never entered into or seen by the App</li>
+            <li>Authentication happens entirely on GitHub's website</li>
+            <li>You can revoke access at any time via GitHub Settings > Applications</li>
+            <li>The App requests "repo" scope to read repository contents for scanning</li>
+            <li>The App does not write to, modify, or delete any repository content</li>
+        </ul>
+
+        <h2>5. File Access</h2>
+        <p>When you select a project directory or APK file for local scanning, DappTestAudit reads those files temporarily in memory. File contents are never stored, cached, or transmitted. Temporary APK copies in the app cache are deleted immediately after scanning.</p>
+
+        <h2>6. No Accounts</h2>
+        <p>DappTestAudit does not create accounts on any service. GitHub sign-in uses OAuth Device Flow — your credentials are never seen by the App. Wallet connection via Sign In With Solana (SIWS) is optional and does not create an account.</p>
+
+        <h2>7. Children's Privacy</h2>
+        <p>DappTestAudit is a developer tool not directed at children under 18.</p>
+
+        <h2>8. Your Rights</h2>
+        <p>Under GDPR, CCPA, Australian Privacy Act 1988, and other applicable privacy laws, you have rights regarding your personal data. Since we collect no personal data, these rights are automatically satisfied. You can delete all locally stored data by uninstalling the App or signing out of GitHub/wallet within the App.</p>
+
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Updated versions will be posted on this page with a new effective date.</p>
+
+        <h2>10. Contact</h2>
+        <p>For privacy inquiries, contact us at:</p>
+        <p><a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></p>
+        <p style="margin-top: 4px;">ADappvark<br>Melbourne, VIC, Australia</p>
+
+        <div class="footer">
+            <p>&copy; 2026 ADappvark. Melbourne, VIC, Australia.</p>
+            <p style="margin-top: 8px;">
+                <a href="index.html">Home</a> &middot;
+                <a href="terms.html">Terms</a> &middot;
+                <a href="disclaimer.html">Disclaimer</a> &middot;
+                <a href="sanctions.html">Sanctions</a> &middot;
+                <a href="copyright.html">Copyright</a> &middot;
+                <a href="license.html">License</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
